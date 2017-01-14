@@ -1,0 +1,58 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Esdras H.</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="menu-item"><a class="menu-a">HOME</a></div>
+        <div class="menu-item"><a class="menu-a">DESIGN</a></div>
+        <div class="menu-item"><a class="menu-a">MUSIC </a></div>
+        <div class="menu-item"><a class="menu-a">CONTACT</a></div>
+    </div>
+    <div class="content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="title">ESDRAS HIGUEROS</p>
+    </div>
+    <div class="basic">
+        <br>
+        <p class="text">Intermediate Designer, Focused on Photography, Video and 3D.</p>
+        <div align="center">
+            <img src="design.png" height="200px">
+        </div>
+        <br>
+        <p class="text">Specialized techniques in Photoshop, Sony Vegas and Blender, Including art concepts</p>
+        <div align="center">
+            <img src="3D.png" height="200px">
+        </div>
+        <p class="text">Music Composer and Intermediate Audio, With specialization in Image-Line,<br>With concepts focused on the music and audio of the future.</p>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="footer">
+        <p class="footer-text">Copyright © 2017 Esdras H., All rights reserved.</p>
+    </div>
+</body>
+</html>
+<script>
+   function removejscssfile(filename, filetype) {
+   var targetelement = (filetype == "js") ? "script" : (filetype == "css") ? "link" : "none" //determine element type to create nodelist from
+   var targetattr = (filetype == "js") ? "src" : (filetype == "css") ? "href" : "none" //determine corresponding attribute to test for
+   var allsuspects = document.getElementsByTagName(targetelement)
+   for (var i = allsuspects.length; i >= 0; i--) { //search backwards within nodelist for matching elements to remove
+   if (allsuspects[i] && allsuspects[i].getAttribute(targetattr) != null && allsuspects[i].getAttribute(targetattr).indexOf(filename) != -1)
+   allsuspects[i].parentNode.removeChild(allsuspects[i]) //remove element by calling parentNode.removeChild()
+   }
+   }
+   removejscssfile("ga.js", "js") //remove all occurences of "somescript.js" on page
+</script>
