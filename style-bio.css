@@ -88,7 +88,7 @@ background-color: rgba(255,255,255,0.75);
 }
 
 .infodiv {
-background-color: #307B1A;
+background-color: #561A7B;
 padding: 24px;
 }
 
@@ -108,4 +108,5 @@ margin: 48px;
 }
 
 .filled {
+height: auto;
 }

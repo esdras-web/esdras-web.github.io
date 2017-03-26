@@ -81,15 +81,15 @@ bottom: 20px;
 left: 20px;
 right: 20px;
 box-shadow: 0px 0px 10px rgba(0,0,0,0.50);
-background-color: rgba(255,255,255,0.75);
+background-color: #AAAAAA;
 }
 
 #infos {
 }
 
 .infodiv {
-background-color: #307B1A;
 padding: 24px;
+background-color: #484848;
 }
 
 .sbtitle {
@@ -108,4 +108,5 @@ margin: 48px;
 }
 
 .filled {
+height: auto;
 }
